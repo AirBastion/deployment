@@ -21,9 +21,9 @@ contract AIRC is PausableToken, BAEAccessibility {
 
 
     string public name = "AIRCToken";
-    string public symbol = "AIRC";
+    string public symbol = "AiRC";
     uint public decimals = 6;
-    uint public INITIAL_SUPPLY = 10000000000;  // 10b
+    uint public INITIAL_SUPPLY = 10542000000000000;  // 10b
     bool public mintingFinished = false;
 
     /// @dev total supply assigned to msg.sender - wanter to pass directly the crowdsale address
@@ -79,7 +79,7 @@ contract AIRC is PausableToken, BAEAccessibility {
     /** 
      * @dev getter for user amount
      */
-    function userAmount() public view returns (uint) {
+    function getAmount() public view returns (uint) {
         return balances[msg.sender];
     }
 
